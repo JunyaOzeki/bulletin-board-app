@@ -1,6 +1,5 @@
-// src/ThreadList.js
 import React, { useEffect, useState } from "react";
-import { fetchThreads } from "./fethchThread";
+import { fetchThreads } from "./fetchThreads";
 
 export const ThreadList = () => {
   const [threads, setThreads] = useState([]);
@@ -9,7 +8,6 @@ export const ThreadList = () => {
   useEffect(() => {
     const getThreads = async () => {
       const threadsData = await fetchThreads(offset);
-      console.log(threadsData);
       setThreads(threadsData);
     };
     getThreads();

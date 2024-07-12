@@ -43,3 +43,39 @@ main {
   border-radius: 5px;
   margin-bottom: 10px;
 }
+
+.new-thread {
+  background-color: #e0e0e0;
+  padding: 20px;
+  text-align: center;
+}
+
+.new-thread h2 {
+  margin-bottom: 20px;
+}
+
+.new-thread form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new-thread input {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 80%;
+  max-width: 300px;
+}
+
+.new-thread button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #a4d3a2;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.new-thread button[type="button"] {
+  background-color: #007bff;
+}
