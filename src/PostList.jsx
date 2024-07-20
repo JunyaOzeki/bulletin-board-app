@@ -78,7 +78,9 @@ export const PostList = () => {
             placeholder="投稿しよう！"
             required
           ></textarea>
-          <button type="submit">投稿</button>
+          <button type="submit" disabled={newPostContent.trim() === ""}>
+            投稿
+          </button>
         </form>
       </div>
     </section>

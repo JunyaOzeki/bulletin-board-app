@@ -30,7 +30,6 @@ export const NewThread = () => {
       navigate("/");
     } catch (error) {
       console.error("Error creating thread:", error);
-      // エラーが発生した場合に適切な処理を記述（例: エラーメッセージをユーザーに表示するなど）
     }
   };
 
@@ -49,7 +48,9 @@ export const NewThread = () => {
           <button type="button" onClick={() => navigate("/")}>
             Topに戻る
           </button>
-          <button type="submit">作成</button>
+          <button type="submit" disabled={title.trim() === ""}>
+            作成
+          </button>
         </div>
       </form>
     </section>
