@@ -18,7 +18,7 @@ export const NewThread = () => {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ title }),
+          body: JSON.stringify({ title: title }),
         }
       );
 

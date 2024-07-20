@@ -20,28 +20,38 @@ main {
   padding: 20px;
 }
 
-.threads {
-  background-color: #e0e0e0;
+.thread-list {
   padding: 20px;
-  border-radius: 5px;
 }
 
-.threads h2 {
-  margin: 0 0 20px 0;
+.thread-list h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-.threads ul {
-  list-style: none;
+.thread-list ul {
+  list-style-type: none;
   padding: 0;
-  margin: 0;
 }
 
-.threads ul li {
-  background-color: white;
+.thread-list li {
+  margin-bottom: 10px;
+}
+
+.thread-list li a {
+  display: block;
   padding: 10px;
+  background-color: white;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.thread-list li a:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .new-thread {
@@ -78,4 +88,37 @@ main {
 
 .new-thread button[type="button"] {
   background-color: #007bff;
+}
+
+.posts {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.post {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.new-post textarea {
+  width: 80%;
+  height: 50px;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.new-post button {
+  background-color: #8fce7f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
 }
